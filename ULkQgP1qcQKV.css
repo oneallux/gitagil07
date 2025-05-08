@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.logo-icon {
+    background-color: #22c55e;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.credit-option {
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+}
+
+.icon-container {
+    width: 48px;
+    height: 48px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.lightning-icon {
+    width: 34px;
+    height: 34px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.approval-text {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.amount-range {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00a651;
+    margin-bottom: 24px;
+}
+
+.benefits-list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.benefits-list li {
+    color: #666;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.benefits-list li::before {
+    content: "•";
+    color: #00a651;
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.select-button {
+    background-color: #00a651;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.select-button:hover {
+    background-color: #008f45;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .amount-range {
+        font-size: 24px;
+    }
+}
